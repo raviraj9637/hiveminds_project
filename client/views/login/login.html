@@ -1,0 +1,13 @@
+<div class="container">
+    <form name="loginForm" novalidate>
+        <div class="form-group">
+            <label for="studentEmail">Username/Email</label>
+            <input type="email" class="form-control" id="studentEmail" placeholder="abc@example.com" ng-model="formData.studentEmail" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="********" ng-model="formData.password" required>
+        </div>       
+        <button type="submit" class="btn btn-primary" ng-click="login()">Submit</button>
+    </form>
+</div>

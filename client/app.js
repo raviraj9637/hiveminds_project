@@ -1,0 +1,15 @@
+angular.module('newApp',
+    [
+        'routerApp',
+        'studentCtrl',
+        'studentService',
+        'homeService',
+        'homeCtrl',
+        'loginCtrl',
+        'loginService',
+        'questionCtrl',
+        'questionService',
+        'answerCtrl',
+        'answerService'
+    ]
+);

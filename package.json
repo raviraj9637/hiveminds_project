@@ -1,0 +1,24 @@
+{
+  "name": "angularapplication",
+  "version": "1.0.0",
+  "description": "this is simple student app",
+  "main": "server",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "vikram",
+  "license": "ISC",
+  "dependencies": {
+    "angular-chart.js": "^1.1.1",
+    "bcrypt": "^3.0.2",
+    "bcryptjs": "^2.4.3",
+    "consolidate": "^0.15.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.3.15",
+    "nodemon": "^1.18.7",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "swig": "^1.4.2"
+  }
+}

@@ -1,0 +1,16 @@
+<div class="container">
+    <form name="questionData" novalidate>        
+        <div>
+            <label>Post Question</label>       
+        </div>
+        <div class="form-group">
+            <label for="question">Header</label></br>
+            <!-- <input type="text" class="form-control" id="studentInstitute" placeholder="Student Institute" ng-model="formData.studentInstitute"
+                required> -->
+            <textarea name="questionHead" id="question" cols="80" rows="2" placeholder="Please write some header data" ng-model="formData.textone"></textarea></br>
+            <label for="question">Description</label></br>
+            <textarea name="questionBody" id="question" cols="80" rows="4" placeholder="Please write some question description" ng-model="formData.texttwo"></textarea>
+        </div>        
+        <button type="submit" class="btn btn-primary" ng-click="postQuestion()">Submit</button>
+    </form>
+  </div>

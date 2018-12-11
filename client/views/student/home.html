@@ -1,0 +1,42 @@
+<div class="container">
+    <div>
+        <h1>World Largest Platfor</h1>
+        <h3>Learn, Share, Build</h3>
+    
+    </div>
+    <div>
+        <p>
+            Each month, over 50 million developers come to Stack Overflow to learn, share their knowledge, and build their careers.
+        </p>
+        <p>
+            Join the world’s largest developer community.
+        </p>    
+    </div>
+    <ul>
+        <li class="nav-item active">
+            <a class="nav-link" ui-sref="question">Ask Question</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" ui-sref="answer">Post Your Answer</a>
+        </li>
+    </ul>
+    <button type="button" class="btn btn-primary" ng-click="homepage()">View Questions</button>
+    <br></br>
+    <div ng-repeat='x in allquestions'>
+        <table>
+            <tr><td>Question :- {{x.textone}}</td></tr> 
+            <tr><td>Description :- {{x.texttwo}}</td></tr> 
+            <tr><td>Question _id :- {{x._id}}</td></tr> 
+            <tr><td><textarea name="comment" id="comment" cols="60" rows="1" placeholder="post comment" ng-model="formData.comment"></textarea></td><td><button type="submit" class="btn btn-primary" ng-click="postYourComment()">post</button></td></tr>           
+            <tr><td><a href="#">details</a></td></tr> 
+            <tr ng-repeat='y in x.answer'>
+                <td >
+                    <table>
+                        <tr><td>comment : {{y.text}} : </td><td>(By :- {{y.name}})</td></tr>
+                    </table>  
+                </td>
+            </tr>
+            <tr><td>..............................................................................................................................</td></tr>  
+        </table>    
+    </div>    
+</div>

@@ -1,0 +1,28 @@
+<div class="container">
+    <form name="studentForm" novalidate>
+        <div class="form-group">
+            <label for="studentName">Student Name</label>
+            <input type="text" class="form-control" id="studentName" placeholder="Student Name" ng-model="formData.studentName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="studentEmail">Email</label>
+            <input type="email" class="form-control" id="studentEmail" placeholder="abc@gmail.com" ng-model="formData.studentEmail"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="******" ng-model="formData.password"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" class="form-control" id="cpassword" placeholder="*******" ng-model="formData.cpassword"
+                required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" ng-click="addStudent()">Submit</button>
+    </form>
+</div>

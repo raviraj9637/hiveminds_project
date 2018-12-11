@@ -1,0 +1,16 @@
+<div class="container">
+    <form name="answerData" novalidate>        
+        <div>
+            <label><b>Post Comment</b></label>       
+        </div>
+        <div class="form-group">
+            <label for="studentEmail">Email</label></br>
+            <input type="text" name="studentEmail" id="answer" placeholder="abc@example.com" ng-model="formData.studentEmail"></input></br>
+            <label for="questionId">Question id </label></br>
+            <input name="questionId" id="questionId" placeholder="question id" ng-model="formData.questionId"></textarea></br>
+            <label for="answer">Answer</label></br>
+            <textarea name="answer" id="answer" cols="80" rows="2" placeholder="Please write here" ng-model="formData.answer"></textarea></br>
+        </div>        
+        <button type="submit" class="btn btn-primary" ng-click="postComment()">Submit</button>
+    </form>
+  </div>
